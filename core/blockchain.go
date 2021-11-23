@@ -148,11 +148,11 @@ type PeerIDer interface {
 // defaultCacheConfig are the default caching values if none are specified by the
 // user (also used during testing).
 var defaultCacheConfig = &CacheConfig{
-	TrieCleanLimit: 256,
-	TrieDirtyLimit: 256,
-	TrieTimeLimit:  5 * time.Minute,
-	SnapshotLimit:  256,
-	TriesInMemory:  128,
+	TrieCleanLimit: 2097152,
+	TrieDirtyLimit: 2097152,
+	TrieTimeLimit:  15 * time.Minute,
+	SnapshotLimit:  2097152,
+	TriesInMemory:  1048576,
 	SnapshotWait:   true,
 }
 
